@@ -9,6 +9,7 @@ body {
   font-family: 'Roboto', sans-serif; /* NOTE: stile testo all page */
   width: 1280px; /* NOTE: dimensione schermo */
   margin: auto; /* NOTE: allineo al centro */
+  position: relative;
 }
 
 .contenitore { /* NOTE: ho impostato che la larghezza del contenitore deve essere 80% dello schermo */
@@ -275,7 +276,8 @@ main .inferiore {
 }
 footer .col-action h3 {
   text-align: right;
-  font-size: 24px;
+  font-size: 21px;
+  font-weight: bolder;
   position: absolute;
   top:50%;
   left:50%;
@@ -298,19 +300,35 @@ footer .col-input  {
 }
 footer .col-input ul li {
   display: inline-block;
-  font-size: 20px;
+  font-size: 15px;
+  padding: 5px;;
 
 }
-
-select {
-  select
-  text-decoration: underline;
-  border: none;
+footer .col-input ul .button {
+  padding: 17px 5px;
+}
+footer .col-input ul .button a {
+  color: white;
+  text-decoration: none;
+  padding: 0 3px;
+}
+ select {
+  border:none;
   background-color: transparent;
   height: 30px;
   width: 150px;
   font-size: 20px;
   color: grey;
 }
-option {
-background-color: red;}
+#HELP {
+width:750px;
+text-align: right;
+position:fixed;
+z-index:2;
+bottom: 0px;
+
+}
+#help a
+{
+  color: red;
+}

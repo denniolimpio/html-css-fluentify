@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div id="HELP">
+    <a href="#home">HELP</a>
+
+    </div>
     <!-- **HEADER** -->
     <header>
+
       <div class=" clearfix contenitore">
         <!-- **menubar** -->
         <div class="menubar">
@@ -137,31 +142,38 @@
 
     <footer>
       <div class="clearfix contenitore foot">
-
+        <!-- inizio colonna sinistra Footer-->
+          <div class="col col-action">
+            <h3>Struttura un piano</h3>
+          </div>
+          <!-- inizio colonna destra Footer-->
+          <div class="col col-input">
+            <div class="item">
+              <nav>
+                <ul>
+                  <li>
+                    <label> Sono</label>
+                  </li>
+                  <li>
+                    <select name="select-custom">
+                        <option value="sel">Seleziona</option>
+                        <option value="sex1">Uomo</option>
+                        <option value="sex2">Donna</option>
+                        <option value="sex3">preferisco non specificarlo</option>
+                    </select>
+                    <li class="button"> <a href="#">visualizza il tuo piano </a></li>
+                  <li>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- fine item -->
+          </div>
+          <!-- fine col-input -->
       </div>
-        <div class="col col-action">
-          <h3>Struttura un piano</h3>
-        </div>
-
-        <div class="col col-input">
-          <nav>
-            <ul>
-              <li>Sono</li>
-              <li>
-                <select name="select-custom">
-            				<option value="sel">Seleziona</option>
-            				<option value="sex1">Uomo</option>
-            				<option value="sex2">Donna</option>
-                    <option value="sex3">preferisco non specificarlo</option>
-            		</select>
-                <li class="button"> <a href="#">visualizza il tuo piano </a></li>
-              <li>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
+<!-- fine contenitore footer -->
     </footer>
+<!-- FINE FOOTER -->
 
   </body>
 </html>
