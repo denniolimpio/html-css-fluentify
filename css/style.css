@@ -320,15 +320,28 @@ footer .col-input ul .button a {
   font-size: 20px;
   color: grey;
 }
+
+#HELP .box-fixed {
+  width: 60px;
+  background-color: #7cbb02;
+  text-align: center;
+  border-radius: 4px;
+
+}
 #HELP {
-width:750px;
-text-align: right;
+padding-left: 854px;
 position:fixed;
 z-index:2;
 bottom: 0px;
 
 }
-#help a
-{
+#HELP .box-fixed a
+{ text-decoration: none;
+  color: white;
+}
+
+#HELP .box-fixed a:hover {
   color: red;
+
+
 }
