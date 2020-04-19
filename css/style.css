@@ -254,15 +254,49 @@ main .inferiore {
    color: #8fb0d3;
  }
 /* FINE MAIN INFERIORE */
-
+.hr-mountain {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
 /* FOOTER */
 
-.action {
+.col-action {
+  position: relative;
   width: 50%;
-  height: 300px;
+  height: 150px;
   background-color:#d3d3d3;
 }
-footer .action h3 {
+footer .col-action h3 {
   text-align: center;
   font-size: 30px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
+
+footer .col-input {
+  position: relative;
+  background-color: #d3d3d3;
+  width: 50%;
+  height: 150px;
+}
+
+footer .col-input ul li {
+  display: inline-block;
+  font-size: 20px;
+
+
+}
+
+select {
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
+  height: 30px;
+  width: 150px;
+  font-size: 20px;
+  color: grey;
+}
+option {
+background-color: red;}
