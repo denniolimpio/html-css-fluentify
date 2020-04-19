@@ -43,6 +43,18 @@ ul {
 main {
   position: relative;
 }
+.pgrey
+{
+  color: grey;
+  font-size: 17px;
+  padding: 20px 5px;
+}
+
+.pgreen{
+  font-size: 27px;
+  color: #7cbb01;
+
+}
 /* FINE REGOLE GENERALI */
 
 /*  HEADER|| Menubar */
@@ -53,31 +65,31 @@ main {
 
 }
 /* colonna sinistra */
-header .contenitore .col-logo{
+header .contenitore .menubar .col-logo{
   width: 15%;
   height: 50px;
 }
 /* colonna centrale */
-header .contenitore .col-center {
+header .contenitore .menubar .col-center {
   width: 45%;
 }
 /* colonna destra */
-header .contenitore .col-right {
+header .contenitore .menubar .col-right {
   width: 40%;
   text-align: right;
 }
-/* HEADER | elementi menu  */
+/* HEADER |  menubar  */
 
-/* lista */
-header .menubar .menu li {
+/* elementi lista */
+header .menubar .col .menu li {
   display: inline-block;
   padding: 0 10px;
   font-size: 11px;
   margin-left: 5px;}
 
-/* formattazione link */
+/*  link lista */
 
-header .menubar .menu a {
+header .menubar .col .menu a {
   color: white;
   text-decoration: none;
 }
@@ -86,13 +98,13 @@ header .menubar .menu {
   margin-top: 13px;
 }
 /* colonna destra, elemento login  */
-.menubar .col-right .menu .login {
+header .menubar .col-right .menu .login {
   padding: 2px 8px;
   border: 1px solid white;
   border-radius: 4px;
 }
 /*  colonna destra, elemento sfondo verde */
-.menubar .col-right .menu .button {
+header .menubar .col-right .menu .button {
   background-color: #7cbb02;
   padding: 2px 8px;
   border: 1px solid #7cbb02;
@@ -112,15 +124,16 @@ header .menubar .menu .login:hover {
   border-color: #fd772d;
 }
 /* HEADER | TITLE  */
+
 /* testo */
-header .title h1 {
+header .contenitore .title h1 {
   font-size: 48px;
   width: 700px;
   padding-top: 131px;
   margin-bottom: 20px;
 }
 /* cta */
-header .title a {
+header .contenitore .title a {
   text-decoration: none;
   color: white;
   background-color: #7cbb02;
@@ -131,13 +144,17 @@ header .title a {
 /* FINE HEADER */
 
 /* INIZIO MAIN */
-
-main .top-main {
+main::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+main .top {
   position: relative;
   height: 120px;
   background-color: #d3d3d3;
 }
-main .top-main h3 {
+main .top .text h3 {
   width: 50%;
   margin: auto;
   position: absolute;
@@ -147,20 +164,16 @@ main .top-main h3 {
   font-size: 18px;
   text-align: center;
 }
-main .top-main p {
+main .top .text p {
   font-size: 11px;
   text-align: center;
   color: grey;
   padding: 83px;
 }
-/*  contenuto centrale */
+/*  MAIN  centrale */
 
-main .core-main .col p{
-  font-size: 27px;
-  color: #7cbb01;
 
-}
-main .core-main .col {
+main .focus .col {
   padding-top: 40px;
 }
 
@@ -180,9 +193,7 @@ main .contenitore .col.computer {
   text-align: center;
 
 }
-main .contenitore .col.computer p {
 
-}
 main .contenitore .col.computer img {
   height: 200px;
   width: 200px;
@@ -199,43 +210,59 @@ main .contenitore .col.docu img {
   height: 200px;
 }
 
-main .contenitore .col.docu p {
 
-}
 .hr-img {
   width: 30%;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 5px;
 }
-main .col .descrizione p{
-  color: grey;
-  font-size: 20px;
-  text-align: center;
-  padding: 20px;
-}
+
 .hr-2 {
   border: 1px solid lightgrey;
   border-radius: 5px;
+  margin-bottom: 100PX;
 }
-}
-.inferiore .col {
+
+
+
+/* MAIN INFERIORE */
+main .inferiore {
  position: relative;
- padding: 100px;
 }
  .col-mountain {
+   padding-left: 10%;
+   padding-right: 5%;
    width: 50%;
 
  }
- .immagine img {
-  
-   padding: ;
+ .col-mountain .immagine img {
+   width:450px;
+   height: 400px;
  }
 
- .col-mountain-text {
-   width: 50%;
-   background: ;
-   padding: 50px;
-
+ .col-mountain-text{
+   width: 35%;
+   margin: auto;
  }
-/* blocco titolo */
+
+ .col-mountain-text h3 {
+   font-size: 40px;
+   padding: 0px 5px;
+ }
+ .col-mountain-text a {
+   color: #8fb0d3;
+ }
+/* FINE MAIN INFERIORE */
+
+/* FOOTER */
+
+.action {
+  width: 50%;
+  height: 300px;
+  background-color:#d3d3d3;
+}
+footer .action h3 {
+  text-align: center;
+  font-size: 30px;
+}
