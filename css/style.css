@@ -1,0 +1,241 @@
+/* reset */
+* {
+  padding: 0;
+  margin:  0;
+  box-sizing: border-box;
+}
+/* REGOLE GENERALI */
+body {
+  font-family: 'Roboto', sans-serif; /* NOTE: stile testo all page */
+  width: 1280px; /* NOTE: dimensione schermo */
+  margin: auto; /* NOTE: allineo al centro */
+}
+
+.contenitore { /* NOTE: ho impostato che la larghezza del contenitore deve essere 80% dello schermo */
+  position: relative;
+  width: 90%;
+  margin: auto;/* NOTE:  width + marginin questo modo ho centrato il contenuto dell header */
+}
+.clearfix::after{  /* NOTE: evitare che il main scenda sotto l'header */
+  content: "";
+  display: table;
+  clear: both;
+}
+header {
+  position: relative;
+  margin: auto;
+  color: white;   /* NOTE: tutto il testo all'interno dell'header è bianco */
+  height: 400px;
+  text-transform: uppercase; /* NOTE: TESTO MAIUSCOLO */
+  padding: 30px; /* NOTE: spaziatura superiore */
+  background: rgb(12, 49, 90); /* NOTE: colore sfondo header */
+  background-image: url(../img/background-header.png);
+  background-repeat: no-repeat;
+  background-size: 703px;
+  background-position: 109% 126%;
+}
+/* list general */
+ul {
+  text-decoration:none;
+  list-style-type: none;
+}
+
+main {
+  position: relative;
+}
+/* FINE REGOLE GENERALI */
+
+/*  HEADER|| Menubar */
+
+/* COLONNE impostazioni generali */
+.col {
+  float: left; /* NOTE: tutte le colonne sono affiancate */
+
+}
+/* colonna sinistra */
+header .contenitore .col-logo{
+  width: 15%;
+  height: 50px;
+}
+/* colonna centrale */
+header .contenitore .col-center {
+  width: 45%;
+}
+/* colonna destra */
+header .contenitore .col-right {
+  width: 40%;
+  text-align: right;
+}
+/* HEADER | elementi menu  */
+
+/* lista */
+header .menubar .menu li {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 11px;
+  margin-left: 5px;}
+
+/* formattazione link */
+
+header .menubar .menu a {
+  color: white;
+  text-decoration: none;
+}
+
+header .menubar .menu {
+  margin-top: 13px;
+}
+/* colonna destra, elemento login  */
+.menubar .col-right .menu .login {
+  padding: 2px 8px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+/*  colonna destra, elemento sfondo verde */
+.menubar .col-right .menu .button {
+  background-color: #7cbb02;
+  padding: 2px 8px;
+  border: 1px solid #7cbb02;
+  border-radius: 4px;
+}
+/* menubar hover */
+header .menubar .menu a:hover {
+  background: #fd772d;
+  border-radius: 2px;
+}
+header .menubar .menu .button:hover {
+  background: #fd772d;
+  border-color: #fd772d;
+}
+header .menubar .menu .login:hover {
+  background: #fd772d;
+  border-color: #fd772d;
+}
+/* HEADER | TITLE  */
+/* testo */
+header .title h1 {
+  font-size: 48px;
+  width: 700px;
+  padding-top: 131px;
+  margin-bottom: 20px;
+}
+/* cta */
+header .title a {
+  text-decoration: none;
+  color: white;
+  background-color: #7cbb02;
+  padding: 10px 8px;
+  border: 1px solid #7cbb02;
+  border-radius: 4px;
+}
+/* FINE HEADER */
+
+/* INIZIO MAIN */
+
+main .top-main {
+  position: relative;
+  height: 120px;
+  background-color: #d3d3d3;
+}
+main .top-main h3 {
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  text-align: center;
+}
+main .top-main p {
+  font-size: 11px;
+  text-align: center;
+  color: grey;
+  padding: 83px;
+}
+/*  contenuto centrale */
+
+main .core-main .col p{
+  font-size: 27px;
+  color: #7cbb01;
+
+}
+main .core-main .col {
+  padding-top: 40px;
+}
+
+main .contenitore .col.profilo {
+  text-align: center;
+  width: 33%;
+  background: white;
+}
+main .contenitore .col.profilo img {
+  height: 200px;
+  width: 150px;
+}
+
+main .contenitore .col.computer {
+  width: 33%;
+  background: white;
+  text-align: center;
+
+}
+main .contenitore .col.computer p {
+
+}
+main .contenitore .col.computer img {
+  height: 200px;
+  width: 200px;
+
+}
+main .contenitore .col.docu {
+  width: 33%;
+  background: white;
+  text-align: center;
+}
+
+main .contenitore .col.docu img {
+  width: 150px;
+  height: 200px;
+}
+
+main .contenitore .col.docu p {
+
+}
+.hr-img {
+  width: 30%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+main .col .descrizione p{
+  color: grey;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+.hr-2 {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+}
+.inferiore .col {
+ position: relative;
+ padding: 100px;
+}
+ .col-mountain {
+   width: 50%;
+
+ }
+ .immagine img {
+  
+   padding: ;
+ }
+
+ .col-mountain-text {
+   width: 50%;
+   background: ;
+   padding: 50px;
+
+ }
+/* blocco titolo */
