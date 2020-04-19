@@ -104,6 +104,13 @@ header .menubar .col-right .menu .login {
   border-radius: 4px;
 }
 /*  colonna destra, elemento sfondo verde */
+.button{
+  background-color: #7cbb02;
+  padding: 2px 8px;
+  border: 1px solid #7cbb02;
+  border-radius: 4px;
+
+}
 header .menubar .col-right .menu .button {
   background-color: #7cbb02;
   padding: 2px 8px;
@@ -262,34 +269,41 @@ main .inferiore {
 
 .col-action {
   position: relative;
-  width: 50%;
+  width: 30%;
   height: 150px;
   background-color:#d3d3d3;
 }
 footer .col-action h3 {
-  text-align: center;
-  font-size: 30px;
+  text-align: right;
+  font-size: 24px;
   position: absolute;
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
 }
 
-footer .col-input {
+footer .col-input  {
   position: relative;
   background-color: #d3d3d3;
-  width: 50%;
+  width: 70%;
   height: 150px;
 }
 
+.col-input ul {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+}
 footer .col-input ul li {
   display: inline-block;
   font-size: 20px;
 
-
 }
 
 select {
+  select
   text-decoration: underline;
   border: none;
   background-color: transparent;
